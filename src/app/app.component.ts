@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Words';
+  quotes:string[];
+
+  constructor(){
+    this.quotes=['Fair is foul and foul is fair- Macbeth', 'Whether you think you can or think you cant, you are right', '“If you talk to a man in a language he understands, that goes to his head. If you talk to him in his language, that goes to his heart.-Nelson Mandela']
+  }
 }
