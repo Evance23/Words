@@ -8,7 +8,17 @@
   <h1>Words of Wisdom</h1>
   <ul>
       <li *ngFor='let quote of quotes'>
-        {{quote}}
+      <div>
+        <div class="topical text-white">
+          {{quote.quote}}
+        </div>
+        <div class="naming">
+          {{quote.author}}
+        </div>
+        <div class="roman">
+          {{quote.date}}
+        </div>
+      </div>
       </li>
   </ul>
 </div>

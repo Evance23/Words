@@ -1,4 +1,5 @@
 export class Words {
-    id: number;
-  name: string;
+   author:string="";
+   date:string="" ;
+   quote: string="" ;
 }
