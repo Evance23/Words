@@ -12,10 +12,23 @@ textarea{
     width: 500px;
   height: 200px;
 }
-
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 
 
 .detail-form{
     max-width: 400px;
 
 }
+.column {
+    float: left;
+    width: 50%;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
