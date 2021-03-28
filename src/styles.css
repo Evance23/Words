@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+
+html {
+    height: 100%;
+ }
+ 
+ body {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 100%;
+     font-family: 'lato', sans-serif;
+     background-image: url(../src/assets/th2.jpg);
+ }

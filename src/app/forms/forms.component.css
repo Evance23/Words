@@ -1,0 +1,21 @@
+
+
+div{
+    text-align: left;
+}
+
+label{
+    text-align: left;
+}
+
+textarea{
+    width: 500px;
+  height: 200px;
+}
+
+
+
+.detail-form{
+    max-width: 400px;
+
+}
