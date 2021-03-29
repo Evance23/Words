@@ -1,5 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import { Words } from "../words";
+import { Words } from '../words';
 @Component({
   selector: 'app-forms',
   templateUrl: './forms.component.html',

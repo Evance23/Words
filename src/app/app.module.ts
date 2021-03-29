@@ -6,12 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsComponent } from './forms/forms.component';
 import { WisdomComponent } from './wisdom/wisdom.component';
+import { LikeComponent } from './like/like.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FormsComponent,
-    WisdomComponent 
+    WisdomComponent,
+    LikeComponent,
 
   ],
   imports: [
