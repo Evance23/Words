@@ -10,4 +10,6 @@ html {
      min-height: 100%;
      font-family: 'lato', sans-serif;
      background-image: url(../src/assets/th2.jpg);
+     background-repeat: no-repeat;
+     background-size: 100%;
  }
