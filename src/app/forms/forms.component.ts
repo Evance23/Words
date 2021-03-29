@@ -5,10 +5,15 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './forms.component.html',
   styleUrls: ['./forms.component.css']
 })
-export class FormsComponent {
+export class FormsComponent implements OnInit {
 
-  post(){
-    
+    newQuote = new Quote(0,"quote","author",new Date());
+    constructor() { }
+  
+    ngOnInit() {
+    }
+  
+  }
   }
 
-}
+
