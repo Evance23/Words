@@ -13,6 +13,7 @@ import { FormsComponent } from './forms/forms.component';
   imports: [
     BrowserModule,
     AppRoutingModule
+  
   ],
   providers: [],
   bootstrap: [AppComponent]
