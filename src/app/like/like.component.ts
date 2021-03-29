@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-like',
@@ -6,13 +6,13 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./like.component.css']
 })
 
-export class LikeComponent implements {
-  numberOfLikes: number;
+export class likeComponent implements OnInit {
+  numberOfLikes: number=0;
 likeButtonClick(){
-
+this.numberOfLikes++;
 }
- dislikebuttonClick(){
-   
+ dislikeButtonClick(){
+  this.numberOfLikes--;
  }
 
 
