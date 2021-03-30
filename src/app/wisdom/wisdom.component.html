@@ -23,17 +23,20 @@
     
         <th scope="col">Quote</th>
         <th scope="col">Author</th>
+        <th scope="col">Upvote</th>
+        <th scope="col">Downvote</th>
         <th scope="col">Date</th>
-        <th scope="col">Action</th>
+        
+        <!-- <th scope="col">Action</th> -->
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor='let quote of quotes'>
+      <tr *ngFor='let quote of quotes' let i=index>
 
         <td class="topical text-white"> {{quote.quote}}</td>
         <td class="naming">{{quote.author}}</td>
-        <td class="roman"> {{quote.upvote}}</td>
-        <td class="roman"> {{quote.downvote}}</td>
+        <td class="roman"> <button class="btn btn-success">Upvote</button> {{quote.upvote}}</td>
+        <td class="roman"> <button class="btn btn-danger">Downvote</button>{{quote.downvote}}</td>
         <td class="roman"> {{quote.date}}</td>
         <td class="roman"><button type="button" class="btn btn-danger btn-sm">Delete</button></td>
 
