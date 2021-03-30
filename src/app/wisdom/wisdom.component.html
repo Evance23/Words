@@ -1,45 +1,44 @@
-<h1>Words of Wisdom</h1>
+<div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <app-forms (createdQuote)="recievedQuote($event)"></app-forms>
+      </div>
+      <div class="col-md-6">
+        <h1>Words of Wisdom</h1>
+
+        <table class="table">
+          <thead>
+            <tr>
+
+              <th scope="col">Quote</th>
+              <th scope="col">Author</th>
+              <th scope="col">Upvote</th>
+              <th scope="col">Downvote</th>
+              <th scope="col">Date</th>
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor='let quote of quotes' let i=index>
+
+              <td class="topical text-white"> {{quote.quote}}</td>
+              <td class="naming">{{quote.author}}</td>
+              <td class="roman"> <button class="btn btn-success" (click)="upvote(quote)">Upvote</button>
+                {{quote.upvote}}</td>
+              <td class="roman"> <button class="btn btn-danger"
+                  (click)="downvote(quote)">Downvote</button>{{quote.downvote}}</td>
+              <td class="roman"> {{quote.date}}</td>
+              <td class="roman"><button type="button" class="btn btn-danger btn-sm"
+                  (click)="deleteQuote(quote)">Delete</button></td>
+
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+    </div>
 
 
-<!-- <ul>
-    <li *ngFor='let quote of quotes'>
-        <div>
-            <div class="topical text-white">
-                {{quote.quote}}
-            </div>
-            <div class="naming">
-                {{quote.author}}
-            </div>
-            <div class="roman">
-                {{quote.date}}
-            </div>
-        </div>
-    </li>
-</ul> -->
-
-<table class="table">
-    <thead>
-      <tr>
-    
-        <th scope="col">Quote</th>
-        <th scope="col">Author</th>
-        <th scope="col">Upvote</th>
-        <th scope="col">Downvote</th>
-        <th scope="col">Date</th>
-        
-        <!-- <th scope="col">Action</th> -->
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor='let quote of quotes' let i=index>
-
-        <td class="topical text-white"> {{quote.quote}}</td>
-        <td class="naming">{{quote.author}}</td>
-        <td class="roman"> <button class="btn btn-success">Upvote</button> {{quote.upvote}}</td>
-        <td class="roman"> <button class="btn btn-danger">Downvote</button>{{quote.downvote}}</td>
-        <td class="roman"> {{quote.date}}</td>
-        <td class="roman"><button type="button" class="btn btn-danger btn-sm">Delete</button></td>
-
-      </tr>
-    </tbody>
-  </table>
+  </div>
+</div>

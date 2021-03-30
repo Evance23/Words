@@ -1,35 +1,28 @@
-<div>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6">
-        <form>
-          <div class="form-group">
-            <div class="quotespace">
-              <label form="quote">New Quote</label><br>
-              <!-- <textarea class="form-control" id="description"></textarea> -->
-              <textarea type="text" required class="form-control" id="description" [(ngModel)]="newQuote.quote"
-                name="quote"></textarea>
-          </div>
-          <div class="detail-form">
-            <label form="author">Author</label><br>
-            <!-- <input type="text" name="author" class="form-control"> -->
-          <input type="text" required class="form-control" id="author" [(ngModel)]="newQuote.author" name="author" #author>
-            <p>{{author.value}}</p>
-        </div>
 
-          <div class="detail-form">
-            <label form="date">Date</label><br>
-            <!-- <input type="date" name="date" class="form-control"> -->
-            <input type="date" required class="form-control" id="description" [(ngModel)]="newQuote.quote" name="quote">
-            
-          </div>
-        <button class="btn btn-success"type="submit" >Post</button>
-
-      </div>
-    </form>
+<form #quoteForm="ngForm">
+  <div class="form-group">
+    <div class="quotespace">
+      <label form="quote">New Quote</label><br>
+      <!-- <textarea class="form-control" id="description"></textarea> -->
+      <textarea type="text" required class="form-control" id="description" ngModel
+        name="quote"></textarea>
   </div>
-      <div class="col-md-6">
-        <app-wisdom></app-wisdom>
-      </div>
+  <div class="detail-form">
+    <label form="author">Author</label><br>
+    <!-- <input type="text" name="author" class="form-control"> -->
+  <input type="text" required class="form-control" id="author" ngModel name="author" #author>
+    
 </div>
+
+  <div class="detail-form">
+    <label form="date">Date</label><br>
+    <!-- <input type="date" name="date" class="form-control"> -->
+    <input type="date" required class="form-control" id="description" ngModel name="date">
+    
+  </div>
+<button class="btn btn-success"type="submit" (click)="addQuotes(quoteForm.value)">Post</button>
+
+</div>
+</form>
+
   
