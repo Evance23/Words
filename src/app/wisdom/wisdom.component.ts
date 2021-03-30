@@ -9,9 +9,9 @@ import { Words } from '../words';
 export class WisdomComponent implements OnInit {
   quotes:Words[]=[
 
-      new Words(1, 'Fair is foul and foul is fair.', 'Bertolt ', "5/5/2021"),
-      new Words(2, 'If you talk to a man in a language he understands, that goes to his head. If you talk to him in his language, that goes to his heart ', 'Nelson Mandela', "5/5/2021"),
-      new Words(3, 'Whether you think you can or think you cant, you are right.', 'Anonymous', "5/5/2021")
+      new Words(1, 'Fair is foul and foul is fair.', 'Bertolt ', 0,0,"5/5/2021"),
+      new Words(2, 'If you talk to him in his language, that goes to his heart ', 'Nelson Mandela', 0,0, "5/5/2021"),
+      new Words(3, 'Whether you think you can or think you cant, you are right.', 'Anonymous', 0,0, "5/5/2021")
   ];
 
   constructor(){

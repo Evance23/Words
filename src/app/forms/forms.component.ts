@@ -11,7 +11,7 @@ import { Words } from '../words';
 
 export class FormsComponent implements OnInit {
 //   this.addQuote.emit(this.newQuote);
-newQuote = new Words(0, "", " ", " ");
+newQuote = new Words(0, "", " ", 0,0 , " ");
 constructor(){
 
 }
