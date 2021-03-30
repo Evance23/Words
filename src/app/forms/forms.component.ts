@@ -5,14 +5,19 @@ import { Words } from '../words';
   templateUrl: './forms.component.html',
   styleUrls: ['./forms.component.css']
 })
-export class FormsComponent implements OnInit {
+export class FormssubmitQuote(){
+  // this.addQuote.emit(this.newQuote);
+  // this.newQuote = new Words(0, ""," "," ");Component implements OnInit {
 
     newQuote = new Words(0, ""," "," ");
     @Output() addQuote = new EventEmitter<Words>();
 
-  submitQuote(){
-this.addQuote.emit(this.newQuote);
-this.newQuote = new Words(0, ""," "," ");
+    }
+
+//   submitQuote(){
+// this.addQuote.emit(this.newQuote);
+// this.newQuote = new Words(0, ""," "," ");
+
 }
     
     constructor() { }
